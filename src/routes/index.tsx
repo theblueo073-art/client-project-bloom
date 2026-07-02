@@ -231,6 +231,39 @@ function About() {
   );
 }
 
+function Gallery() {
+  return (
+    <section id="gallery" className="border-y border-border/60 bg-background">
+      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32">
+        <div className="mx-auto max-w-3xl text-center">
+          <div className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">The Work</div>
+          <h2 className="mt-4 font-display text-4xl font-black leading-[1] sm:text-6xl">
+            Fresh cuts,<br /><span className="italic text-gold">straight from the chair.</span>
+          </h2>
+          <p className="mt-6 text-lg text-muted-foreground">
+            A look at the fades, tapers, and beard work coming out of Stellar every week.
+          </p>
+        </div>
+        <div className="mt-14 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
+          {gallery.map((img, i) => (
+            <div key={i} className="group relative aspect-square overflow-hidden rounded-xl border border-border/60 bg-card">
+              <img
+                src={img.url}
+                alt={`Stellar Barbershop work ${i + 1}`}
+                loading="lazy"
+                width={800}
+                height={800}
+                className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+              />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/60 to-transparent opacity-0 transition group-hover:opacity-100" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Testimonials() {
   return (
     <section id="reviews" className="mx-auto max-w-7xl px-6 py-24 sm:py-32">
