@@ -304,6 +304,15 @@ function CTA() {
                 <div className="mt-1 font-semibold">Closed · Opens 9:30 am</div>
               </div>
             </div>
+            <div className="mt-6 flex items-start gap-4">
+              <div className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-gold/15 text-gold">
+                <Mail className="h-5 w-5" />
+              </div>
+              <div className="min-w-0">
+                <div className="text-xs uppercase tracking-widest text-muted-foreground">Email</div>
+                <a href="mailto:stellarbarbershop@gmail.com" className="mt-1 block font-semibold hover:text-gold">stellarbarbershop@gmail.com</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -323,7 +332,7 @@ function Footer() {
           </div>
         </div>
         <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
-          <a href="https://stellarbarbernyc.wixsite.com" target="_blank" rel="noreferrer" className="hover:text-foreground">Website</a>
+          <a href="https://client-project-bloom.lovable.app" target="_blank" rel="noreferrer" className="hover:text-foreground">Website</a>
           <a href={BOOK_URL} target="_blank" rel="noreferrer" className="hover:text-foreground">Booking</a>
           <a href={`tel:${PHONE.replace(/\s/g, "")}`} className="hover:text-foreground">{PHONE}</a>
         </div>
