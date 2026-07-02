@@ -397,6 +397,7 @@ function Landing() {
       <Marquee />
       <Services />
       <About />
+      <Gallery />
       <Testimonials />
       <CTA />
       <Footer />
