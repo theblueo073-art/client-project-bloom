@@ -5,6 +5,20 @@ import haircutImg from "@/assets/service-haircut.jpg";
 import shaveImg from "@/assets/service-shave.jpg";
 import beardImg from "@/assets/service-beard.jpg";
 import aboutImg from "@/assets/about.jpg";
+import g1 from "@/assets/gallery/g1.jpg.asset.json";
+import g2 from "@/assets/gallery/g2.jpg.asset.json";
+import g3 from "@/assets/gallery/g3.jpg.asset.json";
+import g4 from "@/assets/gallery/g4.jpg.asset.json";
+import g5 from "@/assets/gallery/g5.jpg.asset.json";
+import g6 from "@/assets/gallery/g6.jpg.asset.json";
+import g7 from "@/assets/gallery/g7.jpg.asset.json";
+import g8 from "@/assets/gallery/g8.jpg.asset.json";
+import g9 from "@/assets/gallery/g9.jpg.asset.json";
+import g10 from "@/assets/gallery/g10.jpg.asset.json";
+import g11 from "@/assets/gallery/g11.jpg.asset.json";
+import g12 from "@/assets/gallery/g12.jpg.asset.json";
+
+const gallery = [g1, g2, g3, g4, g5, g6, g7, g8, g9, g10, g11, g12];
 
 export const Route = createFileRoute("/")({
   component: Landing,
@@ -37,6 +51,7 @@ function Nav() {
         <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
           <a href="#services" className="transition hover:text-foreground">Services</a>
           <a href="#about" className="transition hover:text-foreground">About</a>
+          <a href="#gallery" className="transition hover:text-foreground">Gallery</a>
           <a href="#reviews" className="transition hover:text-foreground">Reviews</a>
           <a href="#visit" className="transition hover:text-foreground">Visit</a>
         </nav>
@@ -216,6 +231,39 @@ function About() {
   );
 }
 
+function Gallery() {
+  return (
+    <section id="gallery" className="border-y border-border/60 bg-background">
+      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32">
+        <div className="mx-auto max-w-3xl text-center">
+          <div className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">The Work</div>
+          <h2 className="mt-4 font-display text-4xl font-black leading-[1] sm:text-6xl">
+            Fresh cuts,<br /><span className="italic text-gold">straight from the chair.</span>
+          </h2>
+          <p className="mt-6 text-lg text-muted-foreground">
+            A look at the fades, tapers, and beard work coming out of Stellar every week.
+          </p>
+        </div>
+        <div className="mt-14 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
+          {gallery.map((img, i) => (
+            <div key={i} className="group relative aspect-square overflow-hidden rounded-xl border border-border/60 bg-card">
+              <img
+                src={img.url}
+                alt={`Stellar Barbershop work ${i + 1}`}
+                loading="lazy"
+                width={800}
+                height={800}
+                className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+              />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/60 to-transparent opacity-0 transition group-hover:opacity-100" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Testimonials() {
   return (
     <section id="reviews" className="mx-auto max-w-7xl px-6 py-24 sm:py-32">
@@ -349,6 +397,7 @@ function Landing() {
       <Marquee />
       <Services />
       <About />
+      <Gallery />
       <Testimonials />
       <CTA />
       <Footer />
