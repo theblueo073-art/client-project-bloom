@@ -5,6 +5,20 @@ import haircutImg from "@/assets/service-haircut.jpg";
 import shaveImg from "@/assets/service-shave.jpg";
 import beardImg from "@/assets/service-beard.jpg";
 import aboutImg from "@/assets/about.jpg";
+import g1 from "@/assets/gallery/g1.jpg.asset.json";
+import g2 from "@/assets/gallery/g2.jpg.asset.json";
+import g3 from "@/assets/gallery/g3.jpg.asset.json";
+import g4 from "@/assets/gallery/g4.jpg.asset.json";
+import g5 from "@/assets/gallery/g5.jpg.asset.json";
+import g6 from "@/assets/gallery/g6.jpg.asset.json";
+import g7 from "@/assets/gallery/g7.jpg.asset.json";
+import g8 from "@/assets/gallery/g8.jpg.asset.json";
+import g9 from "@/assets/gallery/g9.jpg.asset.json";
+import g10 from "@/assets/gallery/g10.jpg.asset.json";
+import g11 from "@/assets/gallery/g11.jpg.asset.json";
+import g12 from "@/assets/gallery/g12.jpg.asset.json";
+
+const gallery = [g1, g2, g3, g4, g5, g6, g7, g8, g9, g10, g11, g12];
 
 export const Route = createFileRoute("/")({
   component: Landing,
