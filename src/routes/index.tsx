@@ -458,7 +458,7 @@ function Footer() {
           </div>
         </div>
         <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
-          <a href="https://client-project-bloom.lovable.app" target="_blank" rel="noreferrer" className="hover:text-foreground">Website</a>
+          <a href="https://stellar-barbernyc.lovable.app" target="_blank" rel="noreferrer" className="hover:text-foreground">Website</a>
           <a href={BOOK_URL} target="_blank" rel="noreferrer" className="hover:text-foreground">Booking</a>
           <a href={`tel:${PHONE.replace(/\s/g, "")}`} className="hover:text-foreground">{PHONE}</a>
         </div>
