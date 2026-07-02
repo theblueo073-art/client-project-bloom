@@ -51,6 +51,7 @@ function Nav() {
         <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
           <a href="#services" className="transition hover:text-foreground">Services</a>
           <a href="#about" className="transition hover:text-foreground">About</a>
+          <a href="#gallery" className="transition hover:text-foreground">Gallery</a>
           <a href="#reviews" className="transition hover:text-foreground">Reviews</a>
           <a href="#visit" className="transition hover:text-foreground">Visit</a>
         </nav>
