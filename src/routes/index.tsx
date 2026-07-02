@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Scissors, Star, MapPin, Phone, Clock, Calendar, Sparkles, ArrowRight, Quote, Heart } from "lucide-react";
+import { Scissors, Star, MapPin, Phone, Clock, Calendar, Sparkles, ArrowRight, Quote, Heart, Mail } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
 import haircutImg from "@/assets/service-haircut.jpg";
 import shaveImg from "@/assets/service-shave.jpg";
