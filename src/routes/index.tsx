@@ -99,7 +99,7 @@ function Hero() {
             </div>
             <div className="mt-3 text-2xl font-semibold">Closed · Opens 9:30 am</div>
             <div className="mt-6 space-y-3 text-sm">
-              {[["Mon – Fri", "9:30 – 8:00"], ["Saturday", "9:30 – 7:00"], ["Sunday", "10:00 – 6:00"]].map(([d, h]) => (
+              {[["Mon – Fri", "9:30 – 8:00"], ["Saturday", "9:30 – 7:00"], ["Sunday", "Closed"]].map(([d, h]) => (
                 <div key={d} className="flex items-center justify-between border-b border-border/40 pb-2 last:border-0">
                   <span className="text-muted-foreground">{d}</span>
                   <span className="font-medium">{h}</span>
