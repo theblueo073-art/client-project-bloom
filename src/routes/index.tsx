@@ -208,7 +208,7 @@ function About() {
           <div className="mt-10 grid grid-cols-3 gap-6 border-t border-border/60 pt-8">
             <Stat n="317" label="5-star ready reviews" />
             <Stat n="30 min" label="Average visit" />
-            <Stat n="7 days" label="Open a week" />
+            <Stat n="6 days" label="Open a week" />
           </div>
         </div>
       </div>
