@@ -86,8 +86,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Stellar Barbershop — Master Cuts in Chelsea, NYC" },
       { name: "twitter:description", content: "Stellar Barbershop on 6th Ave — precision cuts, hot towel shaves, and beard grooming from Chelsea's most loved barbers. Rated 4.8 by 317 clients." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/381f691a-9bbc-4d6e-bbca-ff6cc72e8569/id-preview-c7af4ded--77105e7b-b457-4349-ba73-addad75b8490.lovable.app-1783026973054.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/381f691a-9bbc-4d6e-bbca-ff6cc72e8569/id-preview-c7af4ded--77105e7b-b457-4349-ba73-addad75b8490.lovable.app-1783026973054.png" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/5a0f22da-7fcb-4afe-98cc-0ceca8782656" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/5a0f22da-7fcb-4afe-98cc-0ceca8782656" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
