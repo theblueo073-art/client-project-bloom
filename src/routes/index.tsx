@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Scissors, Star, MapPin, Phone, Clock, Calendar, Sparkles, ArrowRight, Quote, Heart, Mail, ChevronLeft, ChevronRight, X } from "lucide-react";
+import { Scissors, Star, MapPin, Phone, Clock, Calendar, Sparkles, ArrowRight, Quote, Heart, Mail, ChevronLeft, ChevronRight, X, Instagram } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
 import haircutImg from "@/assets/service-haircut.jpg";
 import shaveImg from "@/assets/service-shave.jpg";
@@ -56,9 +56,20 @@ function Nav() {
           <a href="#reviews" className="transition hover:text-foreground">Reviews</a>
           <a href="#visit" className="transition hover:text-foreground">Visit</a>
         </nav>
-        <a href={BOOK_URL} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-gold px-4 py-2 text-sm font-semibold text-primary-foreground transition hover:brightness-110">
-          Book <ArrowRight className="h-4 w-4" />
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href="https://www.instagram.com/stellar_barbershop/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+            className="grid h-10 w-10 place-items-center rounded-full border border-border/60 text-muted-foreground transition hover:border-gold/60 hover:text-gold"
+          >
+            <Instagram className="h-5 w-5" />
+          </a>
+          <a href={BOOK_URL} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-gold px-4 py-2 text-sm font-semibold text-primary-foreground transition hover:brightness-110">
+            Book <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
       </div>
     </header>
   );
@@ -458,6 +469,9 @@ function Footer() {
           </div>
         </div>
         <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
+          <a href="https://www.instagram.com/stellar_barbershop/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-foreground">
+            <Instagram className="h-4 w-4" /> Instagram
+          </a>
           <a href="https://stellar-barbernyc.lovable.app" target="_blank" rel="noreferrer" className="hover:text-foreground">Website</a>
           <a href={BOOK_URL} target="_blank" rel="noreferrer" className="hover:text-foreground">Booking</a>
           <a href={`tel:${PHONE.replace(/\s/g, "")}`} className="hover:text-foreground">{PHONE}</a>
